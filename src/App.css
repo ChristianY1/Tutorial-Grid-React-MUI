@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+.customInputRoot {
+  height: 30px; /* Ajusta la altura según tus necesidades */
+}
+
+.customInput {
+  height: 30px; /* Ajusta la altura según tus necesidades */
+  padding: 0 14px; /* Ajusta el padding según tus necesidades */
+  box-sizing: border-box;
+}
+
+.customTextField {
+  width: 150px; /* Ajusta el ancho según tus necesidades */
+}
+
+.customTextField2 {
+  width: 130px; /* Ajusta el ancho según tus necesidades */
+}
+
