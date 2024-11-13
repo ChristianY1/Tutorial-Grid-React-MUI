@@ -4,7 +4,7 @@
     text-align: center;
 } */
 
-.MuiTableCell-root:nth-child(1) {
+.MuiTableCell-root:nth-child(-1) {
     width: 70px !important;
     min-width: 70px !important;
     text-align: center;

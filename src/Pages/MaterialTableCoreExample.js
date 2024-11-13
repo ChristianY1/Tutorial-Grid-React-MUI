@@ -1,21 +1,10 @@
 import MaterialTable from "@material-table/core";
-import { makeStyles } from "@material-ui/core/styles";
 import { useState } from "react";
 import '../styles/global.css'
 
-const useStyles = makeStyles({
-  actionColumn: {
-    "&:nth-child(1)": {
-      // Aplica el estilo al primer hijo (la columna de Actions)
-      width: "70px !important",
-      minWidth: "70px !important",
-      textAlign: "center",
-    },
-  },
-});
+
 
 function MaterialTableCoreExample(params) {
-  const classes = useStyles();
   const [data, setData] = useState([
     {
       name: "John",
@@ -83,7 +72,8 @@ function MaterialTableCoreExample(params) {
         tableLayout: "fixed",
         headerStyle: { whiteSpace: "nowrap" },
         search: false,
-        actionsColumnIndex: 0,
+        padding: false,
+        actionsColumnIndex: -1,
         actionsCellStyle: {
           width: "100px", // Aumenta el ancho de la columna de acciones
           minWidth: "100px",
@@ -103,9 +93,7 @@ function MaterialTableCoreExample(params) {
             }, 600);
           }),
       }}
-      style={{
-        [`& th.${classes.actionColumn}`]: classes.actionColumn, // Aplica la clase de estilo
-      }}
+
     />
   );
 }
